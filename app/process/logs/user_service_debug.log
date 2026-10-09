@@ -1,0 +1,15 @@
+[2025-12-12 10:25:57] === UserService Debug ===
+[2025-12-12 10:25:57] University ID: '48'
+[2025-12-12 10:25:57] Filters: []
+[2025-12-12 10:25:57] Using university filter. SQL with INNER JOIN
+[2025-12-12 10:25:57] Final SQL: SELECT Users.* 
+                    FROM Users
+                    INNER JOIN University_User 
+                        ON Users.ID = University_User.User_ID
+                    WHERE University_User.University_ID = ? ORDER BY Users.ID DESC
+[2025-12-12 10:25:57] Params: ["48"]
+[2025-12-12 10:25:57] Users in University_User table for uniId 48: 30
+[2025-12-12 10:25:57] University ID presence check: [{"table_name":"University_User","count":30},{"table_name":"Student_Ledgers","count":16019}]
+[2025-12-12 10:25:57] Preparing SQL statement...
+[2025-12-12 10:25:57] Executing SQL with params...
+[2025-12-12 10:25:57] Query returned 24 rows
